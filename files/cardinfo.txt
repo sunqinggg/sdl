@@ -1,0 +1,11 @@
+FRANK Debit Card,ocbc,debit,shopping,dining,Earn a 1% rebate when shop eat and ride,Choose from 120 stylish card designs,aged 16 and above,Singaporeans Singapore PRs and Foreigners,No minimum annual income,no annual fees,Card design fees:S$0 - S$30
+
+OCBC YES! Debit Card,ocbc,debit,dinning,shopping,Annual Fee:Waived,Overseas ATM Cash Withdrawal Charges - 3% of the transaction amount (Min S$5 and Max S$20),1% rebate on daily Visa spend:Grab, Comfort and CityCab/Cheers and 7-Eleven/ZALORA Lazada ASOS iHerb and Fairprice Online/McDonald's Subway Burger King and more,Age 16 and above,No minimum income,Singaporeans, Singapore PRs and foreigners
+
+OCBC Plus! Visa Debit Card,ocbc,debit,shopping,Enjoy up to 8% rebate on your FairPrice and Unity spend,Spend a minimum of S$200 monthly anywhere outside of FairPrice to qualify for:¡ñ4% off at FairPrice Stores and Warehouse Club1¡ñ3% off at FairPrice Online£¬Spend a minimum of S$500 monthly anywhere outside of FairPrice^ to qualify for:¡ñ7% off at FairPrice Stores and Warehouse Club¡ñ3% off at FairPrice Online£¬Age 16 and above,No minimum income required,Singaporeans, Singaporean PRs and foreigners(NTUC members),no annual fees
+
+
+
+
+
+
