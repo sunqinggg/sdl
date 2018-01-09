@@ -1,0 +1,160 @@
+{% extends 'layout.html' %}
+{% block additionalscripts %}
+
+{% endblock %}
+{% block body %}
+
+<style type="text/css">
+#top{
+  margin-left: 120px;
+}
+
+
+.btn {
+  width:200px;
+  height:50px;
+    background-color: white;
+  border-color: #ff7733;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+    color:#ff7733;
+}
+
+.btn:hover {
+  background: #ffb366;
+}
+#shopping{
+    padding-top: 30px;
+    margin-left: 120px;
+}
+#dining{
+    margin-top:-370px;
+    margin-left: 500px;
+    }
+#travelling{
+    margin-top:-370px;
+    margin-left: 870px;
+}
+#entertainment{
+    margin-top:30px;
+    margin-left: 120px;
+}
+#interest{
+    margin-left: 500px;
+    margin-top: -370px;
+}
+h2{
+    margin-left: 120px;
+}
+.cardnavbar ul{
+    margin-left:123px;
+    padding:0;
+    background:#ff7733;
+    color:#fff;
+    display:flex;
+    width:1000px;
+    font-size:20px;
+    border-radius: 20px;
+}
+.cardnavbar ul li {
+    list-style:none;
+}
+.cardnavbar ul li a{
+    text-decoration:none;
+    color:#fff;
+    padding:20px 80px;
+    display:block;
+    margin-left:15px;
+}
+.cardnavbar ul li a:hover {
+    background-color: #ffb380;
+}
+section{
+    height:0;
+}
+.sticky{
+    position: fixed;
+    top:0;
+    left:0;
+    margin-left:12px;
+    width:82.4%;
+}
+
+</style>
+<script>src="http://code.jquery.com/jquery-3.2.1.js"> </script>
+<script type="text/javascript">
+    $(window).scroll(function(){
+        if($(this).scrollTop()>350){
+            $('.cardnavbar').addClass("sticky");
+        }
+        else
+            {
+                $('.cardnavbar').removeClass("sticky");
+            }
+    });
+
+</script>
+ <div id='top'>
+ <img src="/static/images/topimg1.jpg" width="1000px" height="300px"></a>
+ </div>
+<br>
+<div class="cardnavbar">
+      <ul>
+          <li><a href="#">All banks>></a></li>
+   <li><a href="#">Credit cards</a></li>
+   <li><a href="#">&nbsp</a></li>
+   <li><a href="#">&nbsp</a></li>
+</ul>
+  </div>
+ <h2>Choose the category:</h2>
+<div id='shopping'>
+ <img  src='static/images/shopping.jpg' width='250' height="300"><br><br>
+ <a  href ="#" target="_self"><input type="button" value="Shopping" class='btn'  ></a>
+</div>
+
+<div id='dining'>
+ <img  src='static/images/dining.jpg' width='250' height="300"><br><br>
+ <a href ="#" target="_self"><input type="button" value="Dining" class='btn'  ></a>
+</div>
+
+<div id='travelling'>
+ <img  src='static/images/travel.jpg' width='250' height="300"><br><br>
+ <a  href ="{{ url_for('credit_travel') }}" target="_self"><input type="button" value="Travelling" class='btn'  ></a>
+</div>
+
+<div id='entertainment'>
+ <img  src='static/images/entertainment.jpg' width='250' height="300"><br><br>
+ <a  href ="#" target="_self"><input type="button" value="Entertainment" class='btn'  ></a>
+</div>
+
+<div id='interest'>
+ <img  src='static/images/interest.jpg' width='250' height="300"><br><br>
+ <a  href ="#" target="_self"><input type="button" value="Interest free" class='btn'  ></a>
+</div>
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

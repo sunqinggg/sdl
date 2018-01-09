@@ -1,0 +1,247 @@
+{% extends 'layout.html' %}
+{% block additionalscripts %}
+
+{% endblock %}
+{% block body %}
+
+<style type="text/css">
+body{
+  font-family: 'Calibri';
+}
+
+.onecenter{
+   text-align:center;
+   width:200px;
+}
+
+.btn {
+  width:200px;
+  height:50px;
+  background: #b3b3b3;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 7px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #d9d9d9;
+}
+.btnn{
+  width:200px;
+  height:50px;
+  background: white;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 28px;
+  border-color:#d9d9d9;
+  color: #999999;
+  font-size: 20px;
+  padding: 7px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#bottom{
+  margin-left: 400px;
+  margin-top: -150px;
+  padding:100px;
+ border-color:#ff6666;
+
+}
+
+#left{
+  margin-left: 120px;
+    margin-top:50px;
+
+  }
+
+
+.twocenter{
+   padding-bottom: 20px;
+   font-weight: bold;
+   font-size: 20px;
+}
+
+
+.btn2 {
+    background-color: white;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ff9966;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+
+}
+
+#show{
+    font-size: 30px;
+    text-align: center;
+}
+
+.onecenter{
+  font-size: 30px;
+  font-weight: bold;
+}
+#down{
+  margin-top:-500px;
+  margin-left: -30px;
+}
+.knowmore{
+  font-size: 18px;
+  text-align: center;
+}
+
+#cb{
+  margin-left:145px;
+}
+#all{
+   margin-left: 170px;
+}
+#ocbc{
+  margin-left: 400px;
+  margin-top: -73px;
+}
+#dbs{
+  margin-left: 650px;
+  margin-top:-73px;
+}
+#uob{
+  margin-left: 900px;
+  margin-top:-73px;
+}
+.cardnavbar ul{
+    margin-left:123px;
+    padding:0;
+    background:#ff7733;
+    color:#fff;
+    display:flex;
+    width:1000px;
+    font-size:20px;
+    border-radius: 20px;
+}
+.cardnavbar ul li {
+    list-style:none;
+}
+.cardnavbar ul li a{
+    text-decoration:none;
+    color:#fff;
+    padding:20px 98px;
+    display:block;
+    margin-left:15px;
+}
+.cardnavbar ul li a:hover {
+    background-color: #ffb380;
+}
+section{
+    height:0;
+}
+.sticky{
+    position: fixed;
+    top:0;
+    left:0;
+    margin-left:12px;
+    width:82.4%;
+}
+#table{
+  border-color: red;
+}
+#top {
+    margin-left:10%;
+}
+#debitcard{
+    margin-left:10px;
+}
+#creditcard{
+    margin-left:40px;
+    margin-top:60px;
+}
+#default{
+
+    background:#ffb380;
+    color:#fff;
+
+}
+</style>
+
+ <div id='top'>
+ <img src="/static/images/topimg1.jpg" width="1000px" height="300px"></a>
+ </div>
+<br>
+<div class="cardnavbar">
+      <ul>
+          <li><a href="#">ALL</a></li>
+   <li id="default"><a href="#">OCBC</a></li>
+   <li><a href="#">DBS</a></li>
+   <li><a href="#">UOB</a></li>
+
+</ul>
+  </div>
+ <div id='left'>
+<h2>Comparing for:</h2><br>
+      <div class='onecenter'>
+          <a href ="#" target="_self"><input type="button" value="Shopping" class='btn'  ></a>
+      </div>
+      <br><br>
+      <div class='onecenter'>
+          <a href ="#" target="_self"><input type="button" value="Dining" class='btn'></a>
+      </div>
+      <br><br>
+      <div class='onecenter'>
+           <a href ="#" target="_blank"><input type="button" value="Travelling" class='btnn'></a>
+      </div>
+      <br><br>
+      <div class='onecenter'>
+           <a href ="#" target="_blank"><input type="button" value="Entertainment" class='btn'></a>
+      </div>
+      <br><br>
+      <div class='onecenter'>
+           <a href ="#" target="_blank"><input type="button" value="Interest free" class='btn'></a>
+      </div>
+
+
+
+ </div>
+
+<div id='down'>
+<table border='1'cellpadding="10" width='750'   style="border-collapse:collapse"   id='bottom' >
+  <tr> <td class='onecenter'   height="60">Debit Card</td>
+       <td class='onecenter'   height="60">Credit Card</td>
+  <tr> <td class='twocenter'  height="250" ><br><h>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp A debit card is a plastic payment <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspcard that can be used instead of<br>&nbsp&nbsp&nbsp&nbsp&nbsp cash when making purchases</h><br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img  id='debitcard' src="/static/images/debit.jpg" width="300px" height="200px"></a>
+    <br>
+           <a href="#"  target="_blank" class='knowmore'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspknow more about debit card</a><br><br>
+           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+           <a href ="#" target="_blank"><input type="button" value="Compare" class='btn2'  ></a></td>
+       <td class='twocenter'   height="250"><h>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Payment card with credit line is given </h><br><br>
+
+           <img  id='creditcard' src="/static/images/credit.jpg" width="300px" height="170px"></a>
+           <a href="#"  target="_blank" class='knowmore'><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp know more about credit card</a><br><br>
+           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+           <a href ="{{ url_for('toc') }}" target="_blank"><button class='btn2'type="button">Compare</button></a></td>
+
+ </table>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</head>
+
+
+
+{% endblock %}

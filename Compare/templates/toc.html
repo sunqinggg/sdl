@@ -1,0 +1,124 @@
+{% extends 'layout.html' %}
+{% block additionalscripts %}
+
+{% endblock %}
+{% block body %}
+
+<!doctype html>
+<html lang='en'>
+
+
+<style>
+body{
+  font-family: 'Calibri';
+}
+
+#top{
+  margin-left: 120px;
+}
+#bank{
+    margin-left:125px;
+    padding-top:10px;
+    text-align: center;
+}
+
+#a1{
+  padding-top: 30px;
+  margin-left: 220px;
+}
+#a2{
+  margin-top: -290px;
+  margin-left: 780px;
+}
+
+.cardnavbar ul{
+    margin-left:123px;
+    padding:0;
+    background:#ff7733;
+    color:#fff;
+    display:flex;
+    width:1000px;
+    font-size:20px;
+    border-radius: 20px;
+}
+.cardnavbar ul li {
+    list-style:none;
+}
+.cardnavbar ul li a{
+    text-decoration:none;
+    color:#fff;
+    padding:20px 80px;
+    display:block;
+    margin-left:15px;
+}
+.cardnavbar ul li a:hover {
+    background-color: #ffb380;
+}
+section{
+    height:0;
+}
+.sticky{
+    position: fixed;
+    top:0;
+    left:0;
+    margin-left:12px;
+    width:82.4%;
+}
+</style>
+<script>src="http://code.jquery.com/jquery-3.2.1.js"></script>
+<script type="text/javascript">
+    $(window).scroll(function(){
+        if($(this).scrollTop()>350){
+            $('.cardnavbar').addClass("sticky");
+        }
+        else
+            {
+                $('.cardnavbar').removeClass("sticky");
+            }
+    });
+
+</script>
+
+<body>
+ <div id='top'>
+ <img src="/static/images/topimg1.jpg" width="1000px" height="300px"></a>
+ </div>
+
+<div class="cardnavbar">
+      <ul>
+          <li><a href="#">OCBC>></a></li>
+   <li><a href="#">Travelling>></a></li>
+   <li><a href="#">Credit Card</a></li>
+   <li><a href="#">&nbsp</a></li>
+</ul>
+  </div>
+
+<div id='a1'>
+ <img src="static/images/a1.png"  width="250px"   height="150px"></a> <br>
+ <h1>OCBC Voyage Card</h1>
+ <h>●2.3 miles with every S$1 spend in foreign currency</h><br>
+ <h>●2.3 miles with every S$1 spend for local dining spends</h><br>
+ <h>●1 mile with every S$1 spend for other local spend</h><br>
+</div>
+
+<div id='a2'>
+ <img src="static/images/a2.png"  width="250px"   height="150px"></a>
+  <h1>OCBC Platinum <br>Credit Card</h1>
+ <h>●OCBC$ on every dollar spent</h><br>
+ <h>●Travel deals from Expedia and more</h><br>
+ <h>●Dining deals for every occasion</h><br>
+</div>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+{% endblock %}

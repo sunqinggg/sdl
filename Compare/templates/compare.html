@@ -1,0 +1,212 @@
+{% extends 'layout.html' %}
+{% block additionalscripts %}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+{% endblock %}
+{% block body %}
+
+<style type="text/css">
+body{
+  font-family: 'Calibri';
+}
+
+.onecenter{
+   text-align:center;
+   width:200px;
+}
+
+.btn {
+  width:200px;
+  height:50px;
+  background: #b3b3b3;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 7px 20px 10px 20px;
+  text-decoration: none;
+}
+.btn:hover {
+  background: #d9d9d9;
+}
+
+#bottom{
+  margin-left: 400px;
+  margin-top: -150px;
+  padding:100px;
+ border-color:#ff6666;
+
+}
+
+#left{
+  margin-left: 120px;
+    margin-top:50px;
+
+  }
+
+
+.twocenter{
+   padding-bottom: 20px;
+   font-weight: bold;
+   font-size: 20px;
+    text-align: center;
+}
+
+.btn2 {
+    background-color: white;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ff9966;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+
+}
+
+.onecenter{
+  font-size: 30px;
+  font-weight: bold;
+}
+#down{
+  margin-top:-500px;
+  margin-left: -30px;
+}
+.knowmore{
+  font-size: 18px;
+  text-align: center;
+}
+
+.cardnavbar ul{
+    margin-left:123px;
+    padding:0;
+    background:#ff7733;
+    color:#fff;
+    display:flex;
+    width:1000px;
+    font-size:20px;
+    border-radius: 20px;
+}
+.cardnavbar ul li {
+    list-style:none;
+
+}
+.cardnavbar ul li a{
+    text-decoration:none;
+    color:#fff;
+    padding:20px 98px;
+    display:block;
+    margin-left:15px;
+}
+.cardnavbar ul li a:hover {
+    background-color:#ffb380;
+}
+section{
+    height:0;
+}
+
+#top {
+    margin-left:10%;
+}
+#debitcard{
+    margin-left:10px;
+}
+#creditcard {
+    margin-top: 60px;
+}
+#word1{
+    border-top:30px;
+}
+</style>
+
+<script>
+            $(".btn").on( "click", function( event ) {
+                $(this).css( "background-color", "red");
+            });
+</script>
+ <div id='top'>
+ <img src="/static/images/topimg1.jpg" width="1000px" height="300px"></a>
+ </div>
+<br>
+<div class="cardnavbar">
+<ul>
+    <li  class="active"> <a href="#">ALL</a></li>
+    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">OCBC<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a href="#">Compare Debit Card</a></li>
+               <li><a href="#">Compare Credit Card</a></li>
+           </ul>
+    </li>
+    <li ><a href="#">DBS</a></li>
+    <li><a href="#">UOB</a></li>
+
+</ul>
+
+</div>
+
+ <div id='left'>
+<h2>Comparing for:</h2><br>
+      <div class='onecenter'>
+          <input type="button" value="Shopping" class='btn'  ></a>
+      </div>
+      <br><br>
+      <div class='onecenter'>
+          <input type="button" value="Dining" class='btn'></a>
+      </div>
+      <br><br>
+      <div class='onecenter'>
+           <a href="{{ url_for('travel') }}" target="_blank"><input type="button" value="Travelling" class='btn'></a>
+      </div>
+      <br><br>
+      <div class='onecenter'>
+           <input type="button" value="Entertainment" class='btn'></a>
+      </div>
+      <br><br>
+      <div class='onecenter'>
+           <input type="button" value="Interest free" class='btn'></a>
+      </div>
+
+
+
+ </div>
+
+<div id='down'>
+<table border='1'cellpadding="10" width='750'   style="border-collapse:collapse"   id='bottom' >
+  <tr> <td class='onecenter'   height="60">Debit Card</td>
+       <td class='onecenter'   height="60">Credit Card</td>
+  <tr> <td class='twocenter'  height="250" ><br><h > A debit card is a plastic payment <br>card that can be used instead of<br> cash when making purchases</h><br>
+    <img  id='debitcard' src="/static/images/d.jpg" width="300px" height="200px"></a>
+    <br>
+           <a href="#"  target="_blank" class='knowmore'>know more about debit card</a><br><br>
+
+           <a href ="{{ url_for('debit') }}" target="_blank"><input type="button" value="Compare with Debit card" class='btn2'  ></a></td>
+          <td class='twocenter'   height="250"><h> <br>Payment card with credit line is given </h><br><br>
+
+           <img  id='creditcard' src="/static/images/credit.jpg" width="300px" height="170px"></a>
+           <a href="#"  target="_blank" class='knowmore'><br> know more about credit card</a><br><br>
+
+           <a href ="{{ url_for('credit') }}" target="_blank"><input type="button" value="Compare with Credit card" class='btn2'  ></a></td>
+
+ </table>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</head>
+
+
+
+{% endblock %}

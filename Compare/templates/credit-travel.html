@@ -1,0 +1,209 @@
+{% extends 'layout.html' %}
+{% block additionalscripts %}
+
+{% endblock %}
+{% block body %}
+
+<!doctype html>
+<html lang='en'>
+
+
+<style>
+body{
+  font-family: 'Calibri';
+}
+
+#top{
+  margin-left: 120px;
+}
+
+#a1,#a2{
+    display:inline-block;
+    margin-left: 220px;
+}
+#a3,#a4{
+    display:inline-block;
+    margin-left: 220px;
+}
+
+.cardnavbar ul{
+    margin-left:123px;
+    padding:0;
+    background:#ff7733;
+    color:#fff;
+    display:flex;
+    width:1000px;
+    font-size:20px;
+    border-radius: 20px;
+}
+.cardnavbar ul li {
+    list-style:none;
+}
+.cardnavbar ul li a{
+    text-decoration:none;
+    color:#fff;
+    padding:20px 80px;
+    display:block;
+    margin-left:15px;
+}
+.cardnavbar ul li a:hover {
+    background-color: #ffb380;
+}
+section{
+    height:0;
+}
+.sticky{
+    position: fixed;
+    top:0;
+    left:0;
+    margin-left:12px;
+    width:82.4%;
+}
+#hide{
+    display:none;
+}
+
+</style>
+<script>src="http://code.jquery.com/jquery-3.2.1.js"></script>
+<script type="text/javascript">
+    $(window).scroll(function(){
+        if($(this).scrollTop()>350){
+            $('.cardnavbar').addClass("sticky");
+        }
+        else
+            {
+                $('.cardnavbar').removeClass("sticky");
+            }
+    });
+
+
+    function myFunction() {
+    var x = document.getElementById("hide");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+ <div id='top'>
+ <img src="/static/images/topimg1.jpg" width="1000px" height="300px"></a>
+ </div>
+
+<div class="cardnavbar">
+      <ul>
+          <li><a href="#">All banks>></a></li>
+   <li><a href="{{ url_for('travel') }}">Credit cards>></a></li>
+   <li><a href="{{ url_for('credit') }}">Travelling</a></li>
+   <li><a href="#">&nbsp</a></li>
+</ul>
+  </div>
+
+
+<div id='a1'>
+ <img src="static/images/a1.png"  width="250px"   height="150px"> <br>
+ <h1>OCBC Voyage Card</h1>
+
+ <li>2.3 miles with every S$1 spend in foreign currency</li>
+ <li>2.3 miles with every S$1 spend for local dining spends</li>
+ <li>1 mile with every S$1 spend for other local spend</li>
+
+<br>
+<button class='show' onclick="myFunction()">Show Details</button>
+<br>
+ <div id="hide" >
+<table class="table">
+<tr><th><br>Key Benefit</th></tr>
+<tr><td><ul><li>Gives upon benefany public hospitals</li><li>Unlimited Claims</li><li>$983 per year</ul></td></tr>
+<tr><th><br>Annual Fee</th></tr>
+<tr><td><ul><li>Gives upon benefany public hospitals</li><li>Unlimited Claims</li><li>$983 per year</ul></td></tr>
+</table>
+ </div>
+</div>
+
+
+<div id='a2'>
+ <img src="static/images/a2.png"  width="250px"   height="150px"></a>
+  <h1>OCBC Platinum <br>Credit Card</h1>
+ <li>OCBC$ on every dollar spent</li>
+ <li>Travel deals from Expedia and more</li>
+ <li>Dining deals for every occasion</li>
+<br>
+<button class='show' onclick="myFunction()">Show Details</button>
+<br>
+ <div id="hided" >
+<table class="table">
+<tr><th><br>Key Benefit</th></tr>
+<tr><td><ul><li>Gives upon benefany public hospitals</li><li>Unlimited Claims</li><li>$983 per year</ul></td></tr>
+<tr><th><br>Annual Fee</th></tr>
+<tr><td><ul><li>Gives upon benefany public hospitals</li><li>Unlimited Claims</li><li>$983 per year</ul></td></tr>
+</table>
+ </div>
+</div>
+
+
+<div id='a3'>
+ <img src="static/images/a3.png"  width="300px"   height="250px"></a>
+  <h1>DBS Woman's Card</h1>
+ <h>●Up to 10X DBS points on <br> online and overseas shopping</h>
+</div>
+
+<div id='a4'>
+ <img src="static/images/a4.png"  width="300px"   height="250px"></a>
+  <h1>DBS Altitude Card</h1>
+ <h>●OCBC$ on every dollar spent</h><br>
+ <h>●Travel deals from Expedia and more</h><br>
+ <h>●Dining deals for every occasion</h><br>
+</div>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
